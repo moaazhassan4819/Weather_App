@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
+    <div class="image"><img src="/image/Cloud.jpg" alt="background image"></div>
+    <div class="header">
+        <div class="cloud">
+            <i class="fa-solid fa-cloud"></i>
+            <div class="logo">
+                <h1>CloudCast</h1>
+                <p>Global</p>
+            </div>
+        </div>
+
+        <div class="search">
+            <form onsubmit="weatherApp(); return false">
+                <label for="searching">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Enter Country or City Name" id="searching">
+                </label>
+            </form>
+        </div>
+    </div>
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
